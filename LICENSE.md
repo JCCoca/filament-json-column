@@ -1,7 +1,7 @@
 The MIT License (MIT)
 
 Copyright (c) valentin-morice <valentinmorice1@gmail.com>
-Copyright (c) 2026 José Coca Carrascosa Neto (JCCoca) <jccoca.dev@gmail.com>
+Copyright (c) 2026 José Coca (JCCoca) <jccoca.dev@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
