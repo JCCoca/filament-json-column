@@ -1,0 +1,79 @@
+{
+    "name": "jccoca/filament-json-column",
+    "description": "A simple package to view and edit your JSON columns in Filament",
+    "keywords": [
+        "jccoca",
+        "laravel",
+        "filament-json-column"
+    ],
+    "homepage": "https://github.com/jccoca/filament-json-column",
+    "support": {
+        "issues": "https://github.com/jccoca/filament-json-column/issues",
+        "source": "https://github.com/jccoca/filament-json-column"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "José Coca Carrascosa Neto",
+            "email": "jccoca@gmail.com",
+            "role": "Maintainer / Developer"
+        },
+        {
+            "name": "valentin-morice",
+            "email": "valentinmorice1@gmail.com",
+            "role": "Original Author"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/forms": "^5.0",
+        "filament/notifications": "^5.0",
+        "filament/infolists": "^5.0",
+        "spatie/laravel-package-tools": "^1.15.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^9.0",
+        "nunomaduro/larastan": "^3.0",
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-arch": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JCCoca\\FilamentJsonColumn\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JCCoca\\FilamentJsonColumn\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JCCoca\\FilamentJsonColumn\\FilamentJsonColumnServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
+}
