@@ -4,6 +4,8 @@
     "keywords": [
         "jccoca",
         "laravel",
+        "filament",
+        "filament-plugin",
         "filament-json-column"
     ],
     "homepage": "https://github.com/jccoca/filament-json-column",
