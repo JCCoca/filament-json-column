@@ -47,6 +47,7 @@ The form component provides both a viewer and an editor, with automatic JSON val
 ## Credits
 
 Inspired by Pretty JSON and JSONeditor.
+Original code base created by [valentin-morice](https://github.com/valentin-morice/).
 
 This package loads JSONEditor from a CDN. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for third-party notices.
 
